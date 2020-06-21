@@ -1,1 +1,5 @@
 Application Context - Stores Spring Beans
+
+Dependency Injection - A needed dependency is injected by another object.  The class being injected has no responsibility in instantiating the object being injected.  Generally should be injecting interfaces.
+
+Inversion of Control (IOC) - a technique to allow dependencies to be injected at runtime
