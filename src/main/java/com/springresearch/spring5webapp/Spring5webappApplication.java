@@ -5,6 +5,7 @@ import com.springresearch.spring5webapp.controllers.MyController;
 import com.springresearch.spring5webapp.controllers.PropertyInjectedController;
 import com.springresearch.spring5webapp.controllers.SetterInjectedController;
 import com.springresearch.spring5webapp.examplebeans.FakeDataSource;
+import com.springresearch.spring5webapp.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -22,6 +23,8 @@ public class Spring5webappApplication {
 
 		System.out.println(fakeDataSource.getUser());
 
+		FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+		System.out.println(fakeJmsBroker.getUsername());
 
 	}
 
