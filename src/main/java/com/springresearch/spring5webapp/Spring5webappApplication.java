@@ -1,12 +1,13 @@
-package guru.springframework;
+package com.springresearch.spring5webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring5RecipeAppApplication {
+public class Spring5webappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Spring5RecipeAppApplication.class, args);
+		SpringApplication.run(Spring5webappApplication.class, args);
 	}
+
 }
